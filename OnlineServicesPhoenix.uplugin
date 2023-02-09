@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Online Services Phoenix",
+	"Description": "Online Services implementation for Phoenix",
+	"Category": "Online Platform",
+	"CreatedBy": "XZCendence",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OnlineServicesPhoenix",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
