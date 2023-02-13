@@ -25,7 +25,7 @@ public class OnlineServicesPhoenix : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core",
+				"Core", "OnlineServicesCommon",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);

@@ -2,14 +2,21 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "Modules/ModuleManager.h"
+#include "Online/OnlineServicesCommon.h"
 
-class FOnlineServicesPhoenixModule : public IModuleInterface
+namespace UE::Online {
+	
+class ONLINESERVICESPHOENIX_API FOnlineServicesPhoenix : public FOnlineServicesCommon
 {
 public:
+	using Super = FOnlineServicesCommon;
 
-	/** IModuleInterface implementation */
-	virtual void StartupModule() override;
-	virtual void ShutdownModule() override;
+	FOnlineServicesPhoenix(FName InInstanceName);
+	virtual void RegisterComponents() override;
+	virtual void Initialize() override;
+	virtual TOnlineResult<FGetResolvedConnectString> GetResolvedConnectString(FGetResolvedConnectString::Params&& Params) override;
+	//virtual EOnlineServices GetServicesProvider() const override { return EOnlineServices::Null; }
+
 };
+
+/* UE::Online */ }
